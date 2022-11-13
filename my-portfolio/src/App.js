@@ -8,7 +8,6 @@ function App() {
     <div className="container">
       <div className="content">
         <Navbar />
-        <Header />
       </div>
     </div>
   );
