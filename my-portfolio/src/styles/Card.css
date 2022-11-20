@@ -1,0 +1,13 @@
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolio-image > img {
+    width: 50%;
+}
+
+.btn {
+    padding: 10px;
+}
