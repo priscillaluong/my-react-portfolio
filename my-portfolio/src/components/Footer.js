@@ -1,6 +1,3 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 const Footer = () => {
   return (
     <footer>
@@ -13,10 +10,6 @@ const Footer = () => {
         href="https://instagram.com/priscillaluong"
         className="fa fa-instagram"
       ></a>
-      <div>
-      <FontAwesomeIcon icon="fa-solid fa-barcode" />
-      </div>
-
       <header className="copyright">
         &copy; 2022 Priscilla Luong. All rights reserved
       </header>
