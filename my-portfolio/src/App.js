@@ -1,8 +1,8 @@
-import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Container from './components/Container';
 
 function App() {
 
