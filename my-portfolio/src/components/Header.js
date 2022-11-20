@@ -18,7 +18,6 @@ const Header = (props) => {
 const Header = () => {
     return (
         <header>
-            <h1>Priscilla Luong</h1>
         </header>
     )
 }
