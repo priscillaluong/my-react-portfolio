@@ -6,7 +6,7 @@ import Experience from './Experience';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const Container = () => {
+const PortfolioContainer = () => {
     const [currentPage, setCurrentPage] = useState('Home');
 
     const renderPage = () => {
@@ -32,4 +32,4 @@ const Container = () => {
     )
 }
 
-export default Container;
+export default PortfolioContainer;

@@ -10,12 +10,6 @@ font-family: 'Roboto', sans-serif; */
   --lightest-green: #DFF6FF;
 }
 
-/* reset */
-a {
-  text-decoration: none;
-  color: var(--lightest-green);
-}
-
 /* base styles */
 * {
   margin: 0;
@@ -23,19 +17,6 @@ a {
   font-family: 'Roboto', sans-serif;
   background-color: var(--dark-blue);
   color: var(--lightest-green);
-}
-
-/* navigation bar */
-.navbar {
-  padding: 20px;
-}
-
-a:hover {
-  color: var(--bright-green);
-}
-
-.name:hover {
-  cursor: pointer;
 }
 
 /* small tablet styles */

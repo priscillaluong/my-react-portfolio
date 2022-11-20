@@ -1,0 +1,18 @@
+/* reset */
+a {
+    text-decoration: none;
+    color: var(--lightest-green);
+}
+
+/* navigation bar */
+.navbar {
+  padding: 20px;
+}
+
+a:hover {
+  color: var(--bright-green);
+}
+
+.name:hover {
+  cursor: pointer;
+}

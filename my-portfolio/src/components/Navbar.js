@@ -1,6 +1,7 @@
 import React from 'react';
+import '../styles/Navbar.css'
 
-const Navbar = ({ currentPage, handlePageChange }) => {
+function Navbar({ currentPage, handlePageChange }){
     return (
         <nav className="navbar">
             <h1 className="name">

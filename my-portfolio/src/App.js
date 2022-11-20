@@ -1,10 +1,9 @@
-import Container from './components/Container';
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
-
   return (
     <div className="container">
-      <Container />
+      <PortfolioContainer />
     </div>
   );
 }
