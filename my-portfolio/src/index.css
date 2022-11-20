@@ -6,22 +6,36 @@ font-family: 'Roboto', sans-serif; */
 /* variables */
 :root {
   --dark-blue: #06283D;
+  --bright-green: #8FE3CF;
   --lightest-green: #DFF6FF;
 }
 
+/* reset */
+a {
+  text-decoration: none;
+  color: var(--lightest-green);
+}
 
 /* base styles */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #06283D;
-  color: #DFF6FF;
+  background-color: var(--dark-blue);
+  color: var(--lightest-green);
 }
 
 /* navigation bar */
 .navbar {
   padding: 20px;
+}
+
+a:hover {
+  color: var(--bright-green);
+}
+
+.name:hover {
+  cursor: pointer;
 }
 
 /* small tablet styles */
