@@ -2,7 +2,7 @@ import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
   return (
-    <div className="container-styling">
+    <div>
       <PortfolioContainer />
     </div>
   );
