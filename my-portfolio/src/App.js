@@ -1,8 +1,7 @@
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
 import Container from './components/Container';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,11 +11,11 @@ function App() {
         <Navbar />
         <Header />
       </div>
-      <div className="content">
-        <Portfolio />
+      <div>
+        <Container />
       </div>
-      <div className="content">
-        <Contact />
+      <div>
+        <Footer />
       </div>
     </div>
   );
