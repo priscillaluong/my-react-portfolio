@@ -3,6 +3,14 @@
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+/* variables */
+:root {
+  --dark-blue: #06283D;
+  --lightest-green: #DFF6FF;
+}
+
+
+/* base styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +19,7 @@ font-family: 'Roboto', sans-serif; */
   color: #DFF6FF;
 }
 
+/* navigation bar */
 .navbar {
   padding: 20px;
 }
