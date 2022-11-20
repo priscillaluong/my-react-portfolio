@@ -18,6 +18,7 @@ const Header = (props) => {
 const Header = () => {
     return (
         <header>
+            <h1>Some header</h1>
         </header>
     )
 }
