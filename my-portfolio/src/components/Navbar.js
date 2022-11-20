@@ -5,7 +5,7 @@ function Navbar({ currentPage, handlePageChange }){
     return (
         <nav className="navbar">
             <h1 className="name">
-                Priscilla Luong
+                <a href="#Home" onClick={() => handlePageChange('Home')}>Priscilla Luong</a>
             </h1>
             <div className="links">
                 <a href="#Home" onClick={() => handlePageChange('Home')}>Home</a>
