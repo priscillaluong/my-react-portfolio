@@ -3,6 +3,8 @@ import Home from './Home';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Experience from './Experience';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Container = () => {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -19,10 +21,15 @@ const Container = () => {
         }
         return <Contact />;
     }
+
+    const handlePageChange = (page) =>setCurrentPage(page);
     return (
         <div>
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
+            {renderPage()}
+            <Footer />
         </div>
     )
 }
 
-export default Container
+export default Container;
