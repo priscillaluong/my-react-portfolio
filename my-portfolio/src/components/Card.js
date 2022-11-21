@@ -11,6 +11,7 @@ const Card = () => {
                     <img src={image1} alt="tradr marketplace"></img>
                 </div>
                 <h3 className="portfolio-title">Tradr Marketplace</h3>
+                <p className="project-description">A marketplace application for users to buy, sell and review listed items. App follows the MVC paradigm in its architectural structure, uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.</p>
                 <div className="project-links">
                 <a href="/" className="btn">Github Link</a>
                 <a href="/" className="btn">Deployed Application</a>

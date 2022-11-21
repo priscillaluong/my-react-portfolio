@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin: 20px 20px;
+    border: 2px solid var(--teal);
+    border-radius: 10px;
+  }
+
+  .portfolio-image {
+      margin-top: 20px;
   }
 
 .portfolio-image > img {
@@ -16,8 +22,14 @@
     margin: 20px 0;
 }
 
+.project-description {
+    font-size: 15px;
+    width: 85%;
+}
+
 .project-links {
     margin: 10px 0px;
+    padding: 20px 0;
 }
 
 .btn {
