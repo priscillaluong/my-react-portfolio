@@ -67,7 +67,7 @@ a:hover {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 5px;
+    margin: 20px 5px 25px 5px;
   }
 
   .name {

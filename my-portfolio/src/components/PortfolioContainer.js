@@ -24,7 +24,7 @@ const PortfolioContainer = () => {
 
     const handlePageChange = (page) =>setCurrentPage(page);
     return (
-        <div>
+        <div className="page-container">
             <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
             {renderPage()}
             <Footer />
