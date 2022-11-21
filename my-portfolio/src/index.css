@@ -34,9 +34,12 @@ font-family: 'Roboto', sans-serif; */
   margin-right: auto;
 }
 
+.text-container {
+  margin: 5%;
+}
+
 .profile-text {
   font-size: 20px;
-  width: 85%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -61,27 +64,43 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 5%;
+    margin: 0 4%;
+  }
+
+  .profile-image {
+    min-width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
   }
 
   .profile-image > img{
     width: 70%;
+    margin: 0 5% 0 0;
   }
 
   .profile-text {
+    margin: 10px;
     font-size: 20px;
     padding: 25px 35px;
-    margin-right: 5%;
     line-height: 32px;
-    background-color: var(--teal);
-    border-radius: 10px;
+  }
+
+  .text-container {
+    margin: 0 20px;
   }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px){
   .profile-image > img{
-    max-width: 530px;
+    max-width: 370px;
+  }
+
+  .profile-text {
+    width: 60%;
+    background-color: var(--teal);
+    border-radius: 10px;
   }
 }
 
