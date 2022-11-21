@@ -61,7 +61,7 @@ footer {
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
-  .profile-container, .portfolio-container {
+  .profile-container {
     display: flex;
     flex-direction: row;
     align-items: center;

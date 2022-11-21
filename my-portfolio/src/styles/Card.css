@@ -1,3 +1,9 @@
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .portfolio-item {
     display: flex;
     flex-direction: column;
@@ -5,6 +11,7 @@
     margin: 20px 20px;
     border: 2px solid var(--teal);
     border-radius: 10px;
+    width: 90%;
   }
 
   .portfolio-image {
@@ -51,13 +58,19 @@
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-  .portfolio-image > img {
-    width: 40%;
-  }
+    .portfolio-item {
+        max-width: 550px;
+      }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* desktop styles */
