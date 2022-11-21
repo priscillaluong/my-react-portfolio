@@ -26,7 +26,16 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .profile-image > img{
-  width: 50%;
+  width: 40%;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-text {
+  font-size: 22px;
+  width: 85%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +43,10 @@ font-family: 'Roboto', sans-serif; */
 
 /* small tablet styles */
 @media screen and (min-width: 620px){
-
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* large tablets and laptop styles */
