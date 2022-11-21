@@ -5,7 +5,7 @@ import '../styles/Card.css'
 
 const Card = () => {
     return (  
-        <div className="portfolio-container">
+        <div>
             <article className="portfolio-item">
                 <div className="portfolio-image">
                     <img src={image1} alt="tradr marketplace"></img>

@@ -1,15 +1,36 @@
 .portfolio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-image > img {
-    width: 50%;
+  width: 80%;
 }
 
 .btn {
-    padding: 10px;
+  padding: 10px;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio-image > img {
+    width: 40%;
+  }
+}
+
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200) {
 }
