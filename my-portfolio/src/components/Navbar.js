@@ -8,10 +8,10 @@ function Navbar({ currentPage, handlePageChange }){
                 <a href="#Home" onClick={() => handlePageChange('Home')}>Priscilla Luong</a>
             </h1>
             <div className="links">
-                <a href="#Home" onClick={() => handlePageChange('Home')}>Home</a>
-                <a href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
-                <a href="#Experience" onClick={() => handlePageChange('Resume')}>Resume</a>
-                <a href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</a>
+                <a className="item-link hide" href="#Home" onClick={() => handlePageChange('Home')}>Home</a>
+                <a className="item-link" href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>Portfolio</a>
+                <a className="item-link" href="#Experience" onClick={() => handlePageChange('Resume')}>Resume</a>
+                <a className="item-link" href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</a>
             </div>
         </nav>
     );
