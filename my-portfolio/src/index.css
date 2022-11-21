@@ -7,6 +7,7 @@ font-family: 'Roboto', sans-serif; */
 :root {
   --dark-blue: #06283D;
   --bright-green: #8FE3CF;
+  --gray: #2B4865;
   --lightest-green: #DFF6FF;
   --teal: #256D85;
 }
