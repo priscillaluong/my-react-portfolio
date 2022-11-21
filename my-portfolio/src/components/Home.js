@@ -7,8 +7,7 @@ const Home = () => {
         <img src={profileImage} alt="profile"></img>
       </div>
       <h1 className="profile-text">
-        Hi, my name is Priscilla Luong. I am a Junior Full-Stack Developer with
-        a background in Design.
+        A Junior Full Stack Developer with knowledge in the fundamentals of graphics, web development, and a particular interest in new technologies. Highly skilled in digital design and a confident user of various CAD software. 
       </h1>
     </div>
   );
