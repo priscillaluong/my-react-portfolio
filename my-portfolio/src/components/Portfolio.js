@@ -3,7 +3,7 @@ import '../styles/Card.css'
 
 const Portfolio = () => {
     return (  
-        <div className="portfolio-container">
+        <div>
             <Card />
         </div>
     );

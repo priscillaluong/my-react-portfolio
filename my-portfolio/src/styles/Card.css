@@ -1,12 +1,14 @@
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .portfolio-image > img {
   width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -15,13 +17,6 @@
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-  .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .portfolio-image > img {
     width: 40%;
   }

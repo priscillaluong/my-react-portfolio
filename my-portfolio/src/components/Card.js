@@ -5,30 +5,36 @@ import '../styles/Card.css'
 
 const Card = () => {
     return (  
-        <div>
+        <div className="portfolio-container">
             <article className="portfolio-item">
                 <div className="portfolio-image">
                     <img src={image1} alt="tradr marketplace"></img>
                 </div>
                 <h3 className="portfolio-title">Tradr Marketplace</h3>
+                <div className="project-links">
                 <a href="/" className="btn">Github Link</a>
                 <a href="/" className="btn">Deployed Application</a>
+                </div>
             </article>
             <article className="portfolio-item">
                 <div className="portfolio-image">
                     <img src={image2} alt="destination guide"></img>
                 </div>
                 <h3 className="portfolio-title">Destination Guide</h3>
+                <div className="project-links">
                 <a href="/" className="btn">Github Link</a>
                 <a href="/" className="btn">Deployed Application</a>
+                </div>
             </article>
             <article className="portfolio-item">
                 <div className="portfolio-image">
                     <img src={image3} alt="baxters"></img>
                 </div>
                 <h3 className="portfolio-title">Baxters Flowers</h3>
+                <div className="project-links">
                 <a href="/" className="btn">Github Link</a>
                 <a href="/" className="btn">Deployed Application</a>
+                </div>
             </article>
         </div>
     );
