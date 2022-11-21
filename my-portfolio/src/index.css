@@ -60,13 +60,28 @@ footer {
   .profile-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .profile-image > img{
+    width: 70%;
+  }
+
+  .profile-text {
+    font-size: 20px;
+    padding: 25px 35px;
+    margin-right: 5%;
+    line-height: 32px;
+    background-color: var(--teal);
+    border-radius: 10px;
   }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px){
   .profile-image > img{
-    width: 55%;
+    max-width: 530px;
   }
 }
 
