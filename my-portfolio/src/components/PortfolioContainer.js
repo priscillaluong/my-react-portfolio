@@ -2,7 +2,7 @@ import { useState } from "react";
 import Home from './Home';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-import Experience from './Experience';
+import Resume from './Resume';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -16,8 +16,8 @@ const PortfolioContainer = () => {
         if (currentPage === 'Portfolio') {
             return <Portfolio />;
         }
-        if (currentPage === 'Experience') {
-            return <Experience />;
+        if (currentPage === 'Resume') {
+            return <Resume />;
         }
         return <Contact />;
     }
