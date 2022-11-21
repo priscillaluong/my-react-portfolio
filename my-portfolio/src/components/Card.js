@@ -6,7 +6,7 @@ const Card = ({ projects }) => {
       {projects.map((project) => (
         <article className="portfolio-item">
           <div className="portfolio-image">
-            <img src={project.image} alt={project.title}></img>
+          <img src={project.image} alt={project.title}></img>
           </div>
           <h3 className="portfolio-title">{project.title}</h3>
           <p className="project-description">{project.description}</p>
