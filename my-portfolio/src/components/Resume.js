@@ -2,7 +2,7 @@ import "../styles/Resume.css";
 
 const Experience = () => {
   return (
-    <div>
+    <div className="skills-container">
       <h2 className="skills-header">Technical Skills</h2>
       <div className="skills-card">
         <h2 className="skills-title">LANGUAGES</h2>
@@ -39,12 +39,14 @@ const Experience = () => {
           <li>Bootstrap</li>
         </ul>
       </div>
+      <div className="cv-btn">
       <a
         href="https://drive.google.com/file/d/12GV8k4xffAGtfKs2lngdhj97M_cDAy25/view"
         className="btn"
       >
         Download CV
       </a>
+      </div>
     </div>
   );
 };
