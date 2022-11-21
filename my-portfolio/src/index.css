@@ -43,9 +43,16 @@ font-family: 'Roboto', sans-serif; */
   line-height: 32px;
 }
 
-footer {
-  margin-top: auto;
+.icon {
+  padding: 30px 30px;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  padding: 25px;
 }
 
 /* small tablet styles */
