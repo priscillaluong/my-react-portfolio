@@ -6,6 +6,7 @@ const Experience = () => {
       <h2 className="skills-header">Technical Skills</h2>
       <div className="skills-card">
         <h2 className="skills-title">LANGUAGES</h2>
+        <hr className="dark-hr"></hr>
         <ul>
           <li>JavaScript ES6+</li>
           <li>CSS3</li>
@@ -16,6 +17,7 @@ const Experience = () => {
       </div>
       <div className="skills-card">
         <h2 className="skills-title">APPLICATIONS</h2>
+        <hr className="dark-hr"></hr>
         <ul>
           <li>GitHub</li>
           <li>MongoDB</li>
@@ -25,6 +27,7 @@ const Experience = () => {
       </div>
       <div className="skills-card">
         <h2 className="skills-title">TOOLS</h2>
+        <hr className="dark-hr"></hr>
         <ul>
           <li>Git</li>
           <li>Node.js</li>
