@@ -1,38 +1,55 @@
-.errorMessage {
-    text-align: center;
-    margin: 20px 0 10px 0;
+.form-title {
+  margin: 15px 0 10px 0;
+}
+
+.dark-hr {
+  border: 1px solid var(--gray);
+  margin: 10px 0;
+  width: 95%;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: 380px;
+  margin-top: 50px;
+  border: 2px solid var(--teal);
+  background-color: var(--teal);
+  border-radius: 10px;
+  width: 87%;
 }
 
-.inputBox, .inputBoxMessage {
-    width: 80%;
-    margin-top: 10px;
-    height: 25px;
-    color: var(--dark-blue);
+.inputBox,
+.inputBoxMessage {
+  width: 80%;
+  margin-top: 15px;
+  height: 25px;
+  color: var(--dark-blue);
 }
 
 .inputBoxMessage {
-    height: 100px;
+  height: 100px;
+}
+
+.errorMessage {
+  text-align: center;
+  margin: 20px 0 10px 0;
 }
 
 .submitBtn {
-    margin-top: auto;
+  margin-top: auto;
+}
+
+.submitBtn:hover {
+  color: var(--bright-green);
 }
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-}
-
-/* large tablets and laptop styles */
-@media screen and (min-width: 960px) {
-}
-
-/* desktop styles */
-@media screen and (min-width: 1200) {
+  .form {
+    width: 550px;
+  }
 }
