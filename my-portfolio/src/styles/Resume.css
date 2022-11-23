@@ -52,14 +52,14 @@ li {
   line-height: 30px;
 }
 
-/* small tablet styles */
-@media screen and (min-width: 620px) {
-}
-
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
-}
-
-/* desktop styles */
-@media screen and (min-width: 1200) {
+  .skills-container {
+    flex-direction: row;
+  }
+  .skills-card {
+    width: 20%;
+    margin: 10px;
+    height: 415px;
+  }
 }
