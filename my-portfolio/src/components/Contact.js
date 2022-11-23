@@ -26,13 +26,13 @@ const Contact = () => {
     const { target } = e;
     const inputValue = target.value;
 
-      if (inputValue === "") {
-        setErrorMessage("This field is required.");
-        setTimeout(() => {
-          setErrorMessage("");
-        }, 6000);
-      }
-  }
+    if (inputValue === "") {
+      setErrorMessage("This field is required.");
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 6000);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
