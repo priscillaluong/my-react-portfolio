@@ -80,15 +80,15 @@ const Contact = () => {
           onBlur={handleBlur}
           value={message}
         />
-        <button className="btn" type="submit" onClick={handleSubmit}>
+        {errorMessage && (
+          <div>
+            <p className="errorMessage">{errorMessage}</p>
+          </div>
+        )}
+        <button className="btn submitBtn" type="submit" onClick={handleSubmit}>
           Send a message
         </button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="errorMessage">{errorMessage}</p>
-        </div>
-      )}
     </div>
   );
 };

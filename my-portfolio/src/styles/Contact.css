@@ -1,3 +1,30 @@
+.errorMessage {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.inputBox, .inputBoxMessage {
+    width: 80%;
+    margin-top: 10px;
+    height: 25px;
+    color: var(--dark-blue);
+}
+
+.inputBoxMessage {
+    height: 100px;
+}
+
+.submitBtn {
+    margin-top: auto;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
 }
