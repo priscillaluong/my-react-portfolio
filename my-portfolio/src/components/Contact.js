@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Contact.css";
+import { validateEmail } from '../utils/helpers';
 
 const Contact = () => {
   const [formSubmit, setFormSubmit] = useState(false);
