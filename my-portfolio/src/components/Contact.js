@@ -22,7 +22,7 @@ const Contact = () => {
     }
   };
 
-  const handleBlur = () => {
+  const handleBlur = (e) => {
     const { target } = e;
     const inputValue = target.value;
 
