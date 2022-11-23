@@ -54,8 +54,8 @@ const Contact = () => {
   return (
     <div>
       <form className="form">
-      <h3 className="form-title">Get in touch</h3>
-      <hr className="dark-hr"></hr>
+        <h3 className="form-title">Get in touch</h3>
+        <hr className="dark-hr"></hr>
         <input
           type="name"
           placeholder="Name"
