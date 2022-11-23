@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "../styles/Contact.css";
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from "../utils/helpers";
 
 const Contact = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -14,62 +13,56 @@ const Contact = () => {
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === 'email') {
-        setEmail(inputValue);
-    } else if (inputType === 'name') {
-        setName(inputValue);
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "name") {
+      setName(inputValue);
     } else {
-        setMessage(inputValue);
+      setMessage(inputValue);
     }
-  }
+  };
 
   const handleSubmit = (e) => {
-      e.preventDefault();
-      
-      if (!validateEmail(email)) {
-          setErrorMessage("Email is invalid. Please try again.");
-          return;
-      }
+    e.preventDefault();
 
-      setName("");
-      setEmail("");
-      setMessage("");
+    if (!validateEmail(email)) {
+      setErrorMessage("Email is invalid. Please try again.");
+      return;
+    }
+
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
     <form className="form">
-
-        <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          className="inputBox"
-          required
-        />
-
-
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          className="inputBox"
-          required
-        />
-      
-        <textarea
-          placeholder="Your message"
-          name="message"
-          className="inputBoxMessage"
-          required
-        />
-
-        <button
-          className="btn"
-          type="submit" onClick={handleSubmit}
-        >
-          Send a message
-        </button>
-
+      <input
+        type="name"
+        placeholder="Name"
+        name="name"
+        className="inputBox"
+        onChange={handleInputChange}
+        value={name}
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        className="inputBox"
+        onChange={handleInputChange}
+        value={email}
+      />
+      <textarea
+        placeholder="Your message"
+        name="message"
+        className="inputBoxMessage"
+        onChange={handleInputChange}
+        value={message}
+      />
+      <button className="btn" type="submit" onClick={handleSubmit}>
+        Send a message
+      </button>
     </form>
   );
 };
