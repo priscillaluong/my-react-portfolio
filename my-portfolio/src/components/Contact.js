@@ -22,48 +22,74 @@ const Contact = () => {
     }
   };
 
+  const handleBlur = () => {
+    const { target } = e;
+    const inputValue = target.value;
+
+      if (inputValue === "") {
+        setErrorMessage("This field is required.");
+        setTimeout(() => {
+          setErrorMessage("");
+        }, 6000);
+      }
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid. Please try again.");
+      setErrorMessage("Email is invalid. Please try again!");
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 6000);
       return;
     }
 
     setName("");
     setEmail("");
     setMessage("");
+    setErrorMessage("");
   };
 
   return (
-    <form className="form">
-      <input
-        type="name"
-        placeholder="Name"
-        name="name"
-        className="inputBox"
-        onChange={handleInputChange}
-        value={name}
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        name="email"
-        className="inputBox"
-        onChange={handleInputChange}
-        value={email}
-      />
-      <textarea
-        placeholder="Your message"
-        name="message"
-        className="inputBoxMessage"
-        onChange={handleInputChange}
-        value={message}
-      />
-      <button className="btn" type="submit" onClick={handleSubmit}>
-        Send a message
-      </button>
-    </form>
+    <div>
+      <form className="form">
+        <input
+          type="name"
+          placeholder="Name"
+          name="name"
+          className="inputBox"
+          onChange={handleInputChange}
+          onBlur={handleBlur}
+          value={name}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          className="inputBox"
+          onChange={handleInputChange}
+          onBlur={handleBlur}
+          value={email}
+        />
+        <textarea
+          placeholder="Your message"
+          name="message"
+          className="inputBoxMessage"
+          onChange={handleInputChange}
+          onBlur={handleBlur}
+          value={message}
+        />
+        <button className="btn" type="submit" onClick={handleSubmit}>
+          Send a message
+        </button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="errorMessage">{errorMessage}</p>
+        </div>
+      )}
+    </div>
   );
 };
 
