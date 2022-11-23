@@ -9,10 +9,29 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = () => {
-    setTimeout(() => {
-        setFormSubmit(true);
-    }, 100);
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'email') {
+        setEmail(inputValue);
+    } else if (inputType === 'name') {
+        setName(inputValue);
+    } else {
+        setMessage(inputValue);
+    }
+  }
+
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      if (!validateEmail(email)) {
+          setErrorMessage("Email is invalid. Please try again.");
+          return;
+      }
+
+      set
   };
 
   if (formSubmit) {
