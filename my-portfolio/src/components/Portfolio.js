@@ -4,6 +4,13 @@ import '../styles/Card.css';
 const Portfolio = () => {
     const projects = [
         {
+            title: "Trigger - Pet Rehoming",
+            image: "https://user-images.githubusercontent.com/29457902/206865480-d2166e6e-85fd-443b-aac3-7ac569ece1c2.png",
+            description: "Trigger is an application that give pet owners who are sadly unable to keep their pets, a dedicated platform to find their pet a safe and loving new home. It is a MERN-stack single-page application, combining a scalable MongoDB back end, a GraphQL API, an Express.js and Node.js server with a React front end. We have also implemented user authentication with JWT.",
+            githubUrl: "https://github.com/priscillaluong/tradr-marketplace-ecom",
+            deployedUrl: "https://calm-gorge-52770.herokuapp.com",
+        },
+        {
             title: "Tradr Marketplace",
             image: "https://raw.githubusercontent.com/priscillaluong/tradr-marketplace-ecom/main/public/images/readme-screenshot.png",
             description: "A marketplace application for users to buy, sell and review listed items. App follows the MVC paradigm in its architectural structure, uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.",
