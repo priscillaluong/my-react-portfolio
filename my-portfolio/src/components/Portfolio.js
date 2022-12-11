@@ -6,9 +6,9 @@ const Portfolio = () => {
         {
             title: "Trigger - Pet Rehoming",
             image: "https://user-images.githubusercontent.com/29457902/206865480-d2166e6e-85fd-443b-aac3-7ac569ece1c2.png",
-            description: "Trigger is an application that give pet owners who are sadly unable to keep their pets, a dedicated platform to find their pet a safe and loving new home. It is a MERN-stack single-page application, combining a scalable MongoDB back end, a GraphQL API, an Express.js and Node.js server with a React front end. We have also implemented user authentication with JWT.",
-            githubUrl: "https://github.com/priscillaluong/tradr-marketplace-ecom",
-            deployedUrl: "https://calm-gorge-52770.herokuapp.com",
+            description: "Trigger is a platform that allow pet owners, who are sadly unable to keep their pets, to find them a safe and loving new home. It is a MERN-stack single-page application, with a MongoDB back end, a GraphQL API, an Express.js and Node.js server with a React front end. We've also implemented user authentication with JWT.",
+            githubUrl: "https://github.com/priscillaluong/trigger",
+            deployedUrl: "https://boiling-dusk-63403.herokuapp.com/",
         },
         {
             title: "Tradr Marketplace",
